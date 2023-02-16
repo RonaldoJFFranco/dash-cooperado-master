@@ -3,7 +3,7 @@
 Projeto criado para um desafio de angular.<br>
 <br>
 Tenha instalado:<br>
-Angular, NodeJS, Json-server.<br>
+Angular 15.1.2, Angular CLI 15.0.5, NodeJS 18.14.0, Json-server 0.17.1.<br>
 <br>
 Para iniciar o projeto:<br>
 `npm install` para instalar todas as dependencias<br>
