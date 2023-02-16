@@ -1,0 +1,15 @@
+mat-drawer-container{
+    height: 100vh;
+    mat-drawer{
+        background-color: #165C7D;
+    }
+}
+
+@media (max-width: 723px){
+    .sidenav-desktop{
+        display: none;
+    }
+    .sidenav-mobile{
+        display: block;
+    }
+}

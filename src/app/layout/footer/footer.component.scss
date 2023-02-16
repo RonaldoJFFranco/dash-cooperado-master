@@ -1,0 +1,26 @@
+.reset-button{
+    background-color: #165C7D !important;
+    color:#fff !important;
+    height: 48px !important;
+    margin-left: 10px;
+    padding: 0 24px;
+}
+.tip-button{
+    background-color: #fff !important;
+    color: #165C7D !important;
+    height: 48px !important;
+    margin-left: 10px;
+    padding: 0 24px;
+}
+@media (max-width: 550px) {
+    .actions {
+      display: flex !important;
+      width: -webkit-fill-available;
+      button {
+        font-size: x-small;
+        word-break: keep-all;
+        white-space: initial;
+        line-height: initial;
+      }
+    }
+  }

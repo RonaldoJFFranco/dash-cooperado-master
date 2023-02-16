@@ -1,0 +1,29 @@
+mat-stepper {
+  margin: 0 auto;
+}
+
+.mat-stepper-horizontal {
+  margin-top: 8px;
+  background-color: #e6eef1;
+  min-height: calc(100vh - 155px);
+}
+
+.mat-mdc-form-field {
+  margin-top: 16px;
+}
+
+::ng-deep.mat-horizontal-stepper-header-container {
+  width: fit-content !important;
+  margin: auto !important;
+}
+::ng-deep.mat-step-header {
+  pointer-events: none !important;
+}
+@media (max-width: 723px) {
+  ::ng-deep .mat-step-label {
+    display: none !important;
+  }
+  ::ng-deep .mat-horizontal-stepper-header {
+    padding: 0 5px !important;
+  }
+}

@@ -1,0 +1,32 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fill-available;
+  white-space: break-spaces;
+  .title {
+    font-weight: 700;
+  }
+  .subtitle {
+    font-size: 10px;
+    color: #999999;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 723px) {
+  .top-bar-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: medium !important;
+  }
+  .subtitle {
+    font-size: 8px !important;
+  }
+  .mat-toolbar-single-row{
+    height: auto;
+  }
+}

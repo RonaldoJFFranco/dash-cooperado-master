@@ -1,0 +1,22 @@
+<div class="consult-page">
+  <mat-stepper [linear]="true">
+    <mat-step>
+      <ng-template matStepLabel>Inicio</ng-template>
+      <app-first-step (showReset)="changeShowResetValue($event)" [resetForm]="resetForm"></app-first-step>
+    </mat-step>
+
+    <mat-step>
+        <ng-template matStepLabel>Documentos</ng-template>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Dados cadastrais</ng-template>
+    </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>Admissão</ng-template>
+    </mat-step>
+  </mat-stepper>
+
+  <!-- informações -->
+</div>

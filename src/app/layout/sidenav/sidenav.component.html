@@ -1,0 +1,26 @@
+<div class="sidenav">
+  <img src="/assets/logo.png" alt="logo" />
+  <mat-icon
+    *ngIf="!mobile"
+    aria-hidden="false"
+    aria-label="Example home icon"
+    fontIcon="menu"
+  ></mat-icon>
+  <div *ngFor="let item of menu">
+    <mat-icon
+      aria-hidden="false"
+      class="material-symbols-outlined"
+      aria-label="Example home icon"
+      fontIcon="{{ item }}"
+    ></mat-icon>
+  </div>
+  <div *ngIf="mobile" class="mobile">
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="notifications"
+    ></mat-icon>
+    <button class="toolbarButton">VIACRED</button>
+    <img src="/assets/icon.jpg" alt="icon" />
+  </div>
+</div>

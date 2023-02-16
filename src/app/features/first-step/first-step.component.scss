@@ -1,0 +1,28 @@
+.submitButton {
+  height: 48px !important;
+  margin-left: 10px;
+  padding: 0 24px;
+}
+.mat-mdc-raised-button:not(:disabled) {
+    background-color: #165c7d !important;
+    color: #fff !important;
+  }
+::ng-deep .mat-mdc-text-field-wrapper {
+  height: 40px !important;
+}
+::ng-deep .mat-mdc-form-field-flex {
+  margin-top: -20px !important;
+}
+::ng-deep .mat-label {
+  font-size: small;
+}
+
+@media (max-width: 550px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .submitButton {
+    margin-left: 0px;
+  }
+}

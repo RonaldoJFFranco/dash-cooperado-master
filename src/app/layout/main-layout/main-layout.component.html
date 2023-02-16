@@ -1,0 +1,11 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer mode="side" opened>
+        <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-top-bar></app-top-bar>
+        <app-top-bar-mobile (toggleEvent)="changSidebarStatus($event)"></app-top-bar-mobile>
+        <app-consult-page [resetForm]="resetForm" (showReset)="changeShowResetValue($event)"></app-consult-page>
+        <app-footer [showReset]="showReset" (resetForm)="changeResetFormValue($event)"></app-footer>
+    </mat-drawer-content>
+</mat-drawer-container>

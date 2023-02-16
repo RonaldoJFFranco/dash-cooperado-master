@@ -1,0 +1,109 @@
+<div class="info-cards">
+  <mat-card class="info-card">
+    <mat-card-header>
+      <mat-card-title>Situação cadastral do CPF</mat-card-title>
+      <mat-card-subtitle>Consulta na Receita Federal</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="info-field">
+        <mat-grid-list cols="4" rowHeight="25">
+          <mat-grid-tile
+            [colspan]="1"
+            [rowspan]="2"
+          >
+            <mat-icon
+              aria-hidden="false"
+              aria-label="person icon"
+              fontIcon="person"
+            ></mat-icon>
+          </mat-grid-tile>
+          <mat-grid-tile
+            [colspan]="3"
+            [rowspan]="1"
+          >
+            <span>Nome</span>
+          </mat-grid-tile>
+          <mat-grid-tile
+            [colspan]="3"
+            [rowspan]="1"
+          >
+            <p>{{ user.name }}</p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class="info-field">
+          <mat-grid-list cols="4" rowHeight="25">
+            <mat-grid-tile
+              [colspan]="1"
+              [rowspan]="2"
+            >
+              <mat-icon
+                *ngIf="user.situation === 'Regular'"
+                aria-hidden="false"
+                aria-label="check circle icon"
+                fontIcon="check_circle"
+                id="check_circle"
+              ></mat-icon>
+
+              <mat-icon
+                *ngIf="user.situation === 'Irregular'"
+                aria-hidden="false"
+                aria-label="error icon"
+                fontIcon="error"
+                id="error"
+              ></mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile
+              [colspan]="3"
+              [rowspan]="1"
+            >
+            <span>Situação do CPF</span>
+            </mat-grid-tile>
+            <mat-grid-tile
+              [colspan]="3"
+              [rowspan]="1"
+            >
+            <p>{{ user.situation }}</p>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="info-card" *ngFor="let account of user.accounts">
+    <mat-card-header>
+      <mat-card-title>{{ account.type }}</mat-card-title>
+      <mat-card-subtitle>{{ account.bank }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="info-field">
+        <mat-grid-list cols="4" rowHeight="25">
+          <mat-grid-tile
+            [colspan]="1"
+            [rowspan]="2"
+          >
+            <mat-icon
+              aria-hidden="false"
+              aria-label="credit_card icon"
+              fontIcon="credit_card"
+            ></mat-icon>
+          </mat-grid-tile>
+          <mat-grid-tile
+            [colspan]="3"
+            [rowspan]="1"
+          >
+            <span>Número da conta</span>
+          </mat-grid-tile>
+          <mat-grid-tile
+            [colspan]="3"
+            [rowspan]="1"
+          >
+            <p>{{ account.accountNumber }}</p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Duplicar conta</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

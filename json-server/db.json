@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Mariane de Sousa Oliveira",
+      "cpf": 66755873071,
+      "situation": "Regular",
+      "accounts": [
+        {
+          "type": "Conta aplicação",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 4444324
+        },
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 6666618
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "João de Sousa Oliveira",
+      "cpf": 28473246071,
+      "situation": "Irregular",
+      "accounts": [
+        {
+          "type": "Conta aplicação",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 5577724
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Tereza de Sousa Oliveira",
+      "cpf": 79557485060,
+      "situation": "Regular",
+      "accounts": [
+        {
+          "type": "Conta aplicação",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 5126574
+        },
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 5684618
+        },
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 7722218
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Carlos de Sousa Oliveira",
+      "cpf": 82118832010,
+      "situation": "Regular",
+      "accounts": [
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 7703591
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Fred de Sousa Oliveira",
+      "cpf": 77152282064,
+      "situation": "Irregular",
+      "accounts": [
+        {
+          "type": "Conta aplicação",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 5500324
+        },
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 7963188
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Henrique de Sousa Oliveira",
+      "cpf": 35996090040,
+      "situation": "Regular",
+      "accounts": [
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 7784618
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Luíza de Sousa Oliveira",
+      "cpf": 80386901090,
+      "situation": "Irregular",
+      "accounts": [
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 7784618
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Fernanda de Sousa Oliveira",
+      "cpf": 26658662002,
+      "situation": "Regular",
+      "accounts": [
+        {
+          "type": "Conta aplicação",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 5579324
+        },
+        {
+          "type": "Conta corrente",
+          "bank": "Cooperativa Viacredi",
+          "accountNumber": 7784618
+        }
+      ]
+    }
+  ]
+}

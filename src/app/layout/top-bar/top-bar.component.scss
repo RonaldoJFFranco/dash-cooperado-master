@@ -1,0 +1,47 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-weight: 700;
+  }
+  .subtitle {
+    font-size: 10px;
+    color: #999999;
+    line-height: normal;
+  }
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  min-width: 190px;
+  mat-icon {
+    color: #165C7D;
+  }
+  img {
+    border-radius: 50%;
+    width: 40px;
+    border-color: #165C7D;
+    border-style: solid;
+  }
+  .toolbarButton {
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 3px 15px;
+    color: #165C7D;
+    border-color: #165C7D;
+    border-width: thin;
+  }
+}
+
+@media (max-width: 723px){
+  .top-bar-desktop{
+      display: none;
+  }
+}

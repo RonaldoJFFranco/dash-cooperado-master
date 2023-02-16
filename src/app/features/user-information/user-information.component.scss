@@ -1,0 +1,30 @@
+.info-cards{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: left;
+  .info-card {
+    margin: 5px 10px 5px 0px;
+    width: 275px;
+    min-height: 218px;
+    .info-field{
+      margin-top: 15px;
+      span{
+        color: rgba(0,0,0,.54);
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+::ng-deep .mat-grid-tile-content{
+    justify-content: flex-start !important;
+}
+#check_circle{
+    color:#228b22
+}
+#error{
+  color:#8b2622
+}
+button{
+  color: #165C7D !important;
+}

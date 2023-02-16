@@ -1,0 +1,43 @@
+<div class="first-step">
+  <h2>Informe o CPF do futuro cooperado</h2>
+  <p>
+    Se necessário você podera duplicar uma conta existente ou pausar e retornar
+    este cadastro futuramente<br />
+    Digite apenas os números (sem pontos ou traços)
+  </p>
+  <form class="form" [formGroup]="form">
+    <label for="cpf">CPF</label><br />
+    <mat-form-field appearance="outline">
+      <input
+        id="cpf"
+        matInput
+        type="text"
+        formControlName="cpf"
+        placeholder="000.000.000-00"
+        mask="000.000.000-00"
+        appearance="outline"
+        style="height: 40px"
+      />
+      <mat-error *ngIf="checkError('cpf', 'required')"
+        >CPF é obrigatório</mat-error
+      >
+      <mat-error *ngIf="checkError('cpf', 'minlength')"
+        >O CPF deve conter no mínimo 11 caracteres</mat-error
+      >
+      <mat-error *ngIf="checkError('cpf', 'maxlength')"
+        >O CPF deve conter no máximo 11 caracteres</mat-error
+      >
+      <mat-error *ngIf="checkError('cpf', 'cpfNotValid')"
+        >O CPF informado é invalido</mat-error
+      >
+    </mat-form-field>
+    <button class="submitButton" [disabled]="userData !== undefined" mat-raised-button (click)="sendForm()">
+      Consultar por CPF
+    </button>
+  </form>
+</div>
+<div *ngIf="showData">
+  <app-user-information *ngIf="userData; else elseBlock" [user]="userData"></app-user-information>
+</div>
+<ng-template #elseBlock>CPF não encontrado na base</ng-template>
+
