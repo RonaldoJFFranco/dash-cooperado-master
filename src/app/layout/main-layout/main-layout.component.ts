@@ -25,7 +25,7 @@ export class MainLayoutComponent implements OnInit {
     this.breakpointObserver
       .observe(['(min-width: 723px)'])
       .subscribe((state: BreakpointState) => {
-        if (this.drawer && !this.drawer.opened && state.matches) {
+        if (this.drawer && state.matches && !this.drawer.opened) {
           this.drawer.toggle();
         }
       });
@@ -38,7 +38,7 @@ export class MainLayoutComponent implements OnInit {
       });
   }
 
-  changSidebarStatus(clicked: boolean) {
+  changeSidebarStatus(clicked: boolean) {
     this.drawer.toggle();
   }
 
